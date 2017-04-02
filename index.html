@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>IPportfolio</title>
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/latest/sandstone/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootswatch/latest/sandstone/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <!--navigation-->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -33,29 +35,70 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#">Portfolio <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!--header-->
     <div class="jumbotron text-center" id="jumboHeader">
         <div class="container">
-            <img src="img/faceimage.png" alt="">
+            <img src="img/csharp.png" alt="">
             <h1 class="name">IGOR PAVLOSKI</h1>
-            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content
-                or information.
-            </p>
+            <hr class="hr-transparent">
+            <p>Junior Web Developer - Software Engineer - Graphic Designer</p>
             <p><a class="btn btn-primary btn-lg">Learn more</a></p>
         </div>
     </div>
 
+    <!--Contact form-->
+    <div class="row" id="contactMe">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+                <form action="https://formspree.io/pavlo.igor@gmail.com" method="POST" id="contactForm" novalidate>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Name" id="name">
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="_replyto" class="form-control" placeholder="Email Address" id="email">
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label for="message">Message</label>
+                            <textarea rows="5" class="form-control" placeholder="Message" id="message"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="messageSent"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" value="Send" class="btn btn-success btn-lg">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="row" id="myPortfolio">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+    </div>-->
 
 
-    <!-- jquery Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
