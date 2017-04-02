@@ -365,7 +365,7 @@ fieldset[disabled] .btn-success.active {
   font-size: 20px;
   line-height: 45px;
 }
-.scroll-top {
+/*.scroll-top {
   position: fixed;
   right: 2%;
   bottom: 2%;
@@ -379,7 +379,7 @@ fieldset[disabled] .btn-success.active {
   height: 50px;
   border-radius: 100%;
   line-height: 28px;
-}
+}*/
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;

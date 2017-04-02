@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body id="toTop">
     <!--navigation-->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
@@ -25,7 +25,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand ScrollToTop" href="#">PAVLOSKII</a>
+                <a class="navbar-brand" href="#toTop" id="brand">PAVLOSKII</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
@@ -34,9 +34,9 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Portfolio <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#myPortfolio">Portfolio <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#contactMe">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -50,6 +50,30 @@
             <hr class="hr-transparent">
             <p>Junior Web Developer - Software Engineer - Graphic Designer</p>
             <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+        </div>
+    </div>
+
+    <!--Skills-->
+    <div class="row" id="skills">
+        <div class="container">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+
+    <!--Portfolio-->
+    <div class="row" id="myPortfolio">
+        <div class="container">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
         </div>
     </div>
 
@@ -73,7 +97,7 @@
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label for="message">Message</label>
-                            <textarea rows="5" class="form-control" placeholder="Message" id="message"></textarea>
+                            <textarea rows="5" class="form-control" placeholder="Your message" id="message" name="message"></textarea>
                         </div>
                     </div>
                     <br>
@@ -88,14 +112,6 @@
         </div>
     </div>
 
-    <!--<div class="row" id="myPortfolio">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4"></div>
-    </div>-->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

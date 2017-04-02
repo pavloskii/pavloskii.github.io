@@ -1,28 +1,12 @@
-// 	//slowly scrolling to top class-----------
-//     $('.ScrollToTop').click(function(){
-// 		$('html, body').animate({scrollTop : 0},800);
-// 		return false;
-// 	});
-// 	//shrinking navbar after collapse------
-// 	$(window).scroll(function() {
-//   if ($(document).scrollTop() > 50) {
-//     $('nav').addClass('shrink');
-//   } else {
-//     $('nav').removeClass('shrink');
-//   }
-// });
-
-
 (function ($) {
-	"use strict"; // Start of use strict
+	"use strict";
 
-	// jQuery for page scrolling feature - requires jQuery Easing plugin
-	$('.page-scroll a').bind('click', function (event) {
-		var $anchor = $(this);
-		$('html, body').stop().animate({
-			scrollTop: ($($anchor.attr('href')).offset().top - 50)
-		}, 1250, 'easeInOutExpo');
+	$(document).on('click', 'a', function (event) {
 		event.preventDefault();
+
+		$('html, body').animate({
+			scrollTop: $($.attr(this, 'href')).offset().top
+		}, 500);
 	});
 
 	// Highlight the top nav as scrolling occurs
