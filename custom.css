@@ -207,6 +207,7 @@ section.success {
   background: none;
   box-shadow: none !important;
   resize: none;
+  color: white;
 }
 .floating-label-form-group label {
   display: block;
@@ -251,9 +252,10 @@ footer .footer-above {
 footer .footer-col {
   margin-bottom: 50px;
 }
-footer .footer-below {
+.footer-style {
   padding: 25px 0;
   background-color: #233140;
+  color: white;
 }
 .btn-outline {
   color: white;
@@ -365,21 +367,6 @@ fieldset[disabled] .btn-success.active {
   font-size: 20px;
   line-height: 45px;
 }
-/*.scroll-top {
-  position: fixed;
-  right: 2%;
-  bottom: 2%;
-  width: 50px;
-  height: 50px;
-  z-index: 1049;
-}
-.scroll-top .btn {
-  font-size: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  line-height: 28px;
-}*/
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;

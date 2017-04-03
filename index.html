@@ -34,7 +34,6 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#myPortfolio">Portfolio <span class="sr-only">(current)</span></a></li>
                     <li><a href="#contactMe">Contact</a></li>
                 </ul>
@@ -45,41 +44,36 @@
     <!--header-->
     <div class="jumbotron text-center" id="jumboHeader">
         <div class="container">
-            <img src="img/csharp.png" alt="">
+            <img src="img/headerImg.png" class="fitImage" alt="">
             <h1 class="name">IGOR PAVLOSKI</h1>
             <hr class="hr-transparent">
             <p>Junior Web Developer - Software Engineer - Graphic Designer</p>
-            <p><a class="btn btn-primary btn-lg">Learn more</a></p>
-        </div>
-    </div>
-
-    <!--Skills-->
-    <div class="row" id="skills">
-        <div class="container">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
+            <p><a href="#aboutMeModal" class="btn btn-primary btn-lg" data-toggle="modal">About me</a></p>
         </div>
     </div>
 
     <!--Portfolio-->
     <div class="row" id="myPortfolio">
         <div class="container">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
+            <h1 class="name text-center">PORTFOLIO</h1>
+            <hr class="hr-transparent">
+
+            <div class="col-sm-4 minHeight">
+                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal"><img src="img/portfolio1Library2.png" alt="" class="fitImage portfolioImage"></a>
+            </div>
+            <div class="col-sm-4 minHeight">
+                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal"><img src="img/portfolio2GOT.jpg" alt="" class="fitImage portfolioImage" data-toggle="modal"></a>
+            </div>
+            <div class="col-sm-4 minHeight">
+                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal"><img src="img/portfolio3img2.png" alt="" class="fitImage portfolioImage" data-toggle="modal"></a>
+            </div>
         </div>
     </div>
 
     <!--Contact form-->
     <div class="row" id="contactMe">
         <div class="container">
+            <h1 class="name text-center">CONTACT</h1>
             <div class="col-lg-8 col-lg-offset-2">
                 <form action="https://formspree.io/pavlo.igor@gmail.com" method="POST" id="contactForm" novalidate>
                     <div class="row control-group">
@@ -92,6 +86,7 @@
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label for="email">Email Address</label>
                             <input type="email" name="_replyto" class="form-control" placeholder="Email Address" id="email">
+                            <div id="emailAlert"></div>
                         </div>
                     </div>
                     <div class="row control-group">
@@ -112,6 +107,151 @@
         </div>
     </div>
 
+    <!--footer-->
+    <div class="footer-style text-center">Copyright © Pavloskii</div>
+
+
+    <!--Portfolio Modals-->
+    <!--modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>E-Library</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio1Library2.png" class="img-responsive img-centered" alt="">
+                            <p><strong>E-library</strong> is a web application for entering, deleting and searching books. This
+                                project is made as part of my front-end exam at Seavus Educational and Development Center.
+                                The project had to be done in one working day.</p>
+                            <p><strong>https://github.com/pavloskii/ip-portfolio/tree/master/e-library</strong></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Game of Thrones: Houses at War</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio2GOT.jpg" class="img-responsive img-centered" alt="">
+                            <p><strong>Game of Thrones: Houses at War</strong> is a web application game. In the application
+                                you can add Houses, as well as their lords, symbol and population. The app then calculates
+                                the Attack power and health that the house will have. The houses can attack eachother and
+                                take casulties. The house that loses all population is defeated.</p>
+                            <p><strong>https://github.com/pavloskii/ip-portfolio/tree/master/GOT-HousesAtWar</strong></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>ParkCam</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio3Parking.gif" class="img-responsive img-centered" alt="">
+                            <p>ParkCam is a competion project. Information about the project is unavailable</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--about me modal-->
+    <div class="portfolio-modal modal fade" id="aboutMeModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body" style="text-align: left">
+                            <h2>About me</h2>
+                            <img src="img/skills.jpg" class="img-responsive img-centered" alt="">
+                            <h2>Igor Pavloski </h2>
+                            <h3>Experience </h3>
+                            <p>SEO Specialist at DigitalCloudSEO, March 2015 - July 2015 (5 months)</p>
+
+                            <h3>Certifications</h3>
+                            <p>Oracle Certified Associate, Java SE 7 Programmer, Oracle October 2016</p>
+
+                            <h3>Education</h3>
+
+                            <p> <strong>Faculty of Electrical Engineering and Information Technologies
+                                in Skopje</strong> Master's degree, Project Management, 2014 - 2017</p>
+
+                            <p> <strong>University of Ss. Cyril and Methodius in Skopje</strong>, Faculty of Economics Bachelor's
+                                degree, Electronic Business, 2010 - 2014</p>
+
+
+                            <h3>Courses</h3>
+                            <p>Seavus Educational and Development Center - Academy for Programming, Oct 2016 - Oct 2017</p>
+
+                            <h3>Languages</h3>
+                            <p>English (Full professional proficiency) </p>
+
+                            <h3>Skills and Expertise</h3>
+                            
+                                <p>JavaScript</p>
+                                <p>C# </p>
+                                <p>Java </p>
+                                <p>HTML</p>
+                                <p>CSS </p>
+                                <p>Adobe Photoshop </p>
+                                <p>Search Engine Optimization (SEO) </p>
+                                <p>Project Management </p>
+                                <p>Marketing</p>
+                            
+                        <p>linkedin: https://www.linkedin.com/in/pavloskii/</p>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

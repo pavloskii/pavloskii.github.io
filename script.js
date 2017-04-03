@@ -37,5 +37,20 @@
 			$(this).removeClass("floating-label-form-group-with-focus");
 		});
 	});
+	//mail regex
+	// let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	// function validateEmail() {
+	// 	let email = $('#email').val();
+	// 	if (emailRegex.test(email)) {
+	// 		return;
+	// 	} else {
+	// 		$("#emailAlert").html(`<div class="alert alert-dismissible alert-danger">
+  	// 									<button type="button" class="close" data-dismiss="alert">&times;</button>
+  	// 									<strong>Alert!</strong> Email is not valid.
+	// 								</div>`);
+	// 		return;
+	// 	}
+	// }
+	// $("#email").onblur(validateEmail());
+})(jQuery);
 
-})(jQuery); // End of use strict
